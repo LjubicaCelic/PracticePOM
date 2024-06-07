@@ -4,13 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoggedInSuccessfullyPage {
+public class LoggedInPage {
     WebDriver driver;
     private WebElement logOutButton;
     private WebElement LoggedInSuccessfullyMessage;
     private String text;
 
-    public LoggedInSuccessfullyPage(WebDriver driver) {
+    public LoggedInPage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -28,7 +28,7 @@ public class LoggedInSuccessfullyPage {
 
     //-----------------------------------------------------------------------------------
 
-    public void clickOnLogOutButton(){
+    public void clickOnLogOutButton() {
         getLogOutButton().click();
     }
 

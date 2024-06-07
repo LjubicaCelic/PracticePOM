@@ -25,5 +25,4 @@ public class NavBarPage {
         getPracticeButton().click();
     }
 
-
 }

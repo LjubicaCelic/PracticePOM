@@ -9,6 +9,7 @@ public class LoginPage {
     private WebElement usernameField;
     private WebElement passwordFIeld;
     private WebElement submitButton;
+    private WebElement errorMessage;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -26,6 +27,11 @@ public class LoginPage {
         return driver.findElement(By.id("submit"));
 
     }
+
+    public WebElement getErrorMessage() {
+        return driver.findElement(By.id("error"));
+    }
+
 
     //--------------------------------------------------------
 
